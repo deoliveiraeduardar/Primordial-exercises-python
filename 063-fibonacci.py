@@ -1,4 +1,4 @@
-print('\033[1mChallenge: generate a program that displays n elements of the Fibonacci Sequencee\033[m')
+print('\033[1mCHALLENGE: GENERATE A PROGRAM THAT DISPLAYS N ELEMENTS OF THE FIBONACCI SEQUENCEE\033[m')
 print('---'*28)
 print('')
 
