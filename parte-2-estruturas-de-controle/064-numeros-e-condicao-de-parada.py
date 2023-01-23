@@ -3,14 +3,13 @@ print('----'*20)
 print('*If you want to stop the sum, type 999')
 print('')
 
-n = 0
-count = 0
-add = 0
+n = count = add = 0
+n = float(input('Type the number: '))
 
 while n != 999:
-    n = float(input('Type the number: '))
     add += n
     count += 1
+    n = float(input('Type the number: '))
 
-print(f'You entered {count-1} numbers. Adding them all up, the total is {add-999}')
-print('FIM')
+print(f'You entered {count} numbers. Adding them all up, the total is {add}')
+print('END')
