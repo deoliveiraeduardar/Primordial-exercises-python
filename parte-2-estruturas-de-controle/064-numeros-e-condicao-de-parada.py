@@ -12,6 +12,5 @@ while n != 999:
     add += n
     count += 1
 
-print('')
 print(f'You entered {count-1} numbers. Adding them all up, the total is {add-999}')
 print('FIM')
