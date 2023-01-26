@@ -7,6 +7,7 @@ print('*Mas só vamos parar de jogar quando você perder, humano!')
 lista = []
 par_ou_impar = ''
 soma = 0
+contador = 0
 
 while True:
     # GERANDO LISTA
@@ -38,12 +39,14 @@ while True:
             time.sleep(1)
             print('Por favor, deixa eu treinar o meu algoritmo com você')
             print(emoji.emojize('Vamos lá de novo!:pleading_face:'))
+            contador += 1
             time.sleep(3)
 
             print('')
         else:
             print('Como você escolheu ímpar, você perdeu!!')
             print(emoji.emojize('Nós, máquinas, vamos dominar o mundo! :smiling_face_with_sunglasses:'))
+            contador += 1
             break
 
     # SE A SOMA FOR ÍMPAR
@@ -58,8 +61,11 @@ while True:
             time.sleep(1)
             print('Por favor, deixa eu treinar o meu algoritmo com você')
             print(emoji.emojize('Vamos lá de novo!:pleading_face:'))
+            contador += 1
             time.sleep(3)
         else:
             print('Como você escolheu par, você perdeu!!')
             print(emoji.emojize('Nós, máquinas, vamos dominar o mundo!:smiling_face_with_sunglasses:'))
+            contador += 1
             break
+print(f'Nos jogamos {contador} vezes! Foi divertido. Até mais!')
