@@ -8,9 +8,10 @@ while True:
     print('*Caso queira parar, é só digitar um número negativo.')
     entrada_tabuada = int(input('\033[1mDigite o número que você quer ver a tabuada: \033[m'))
     if entrada_tabuada < 0:
+        print('')
         print('Finalizando o algoritmo...')
         time.sleep(1)
-        print('Até logo!')
+        print('Volte quando precisar de uma ajudinnha com cálculo!\nAté logo!')
         break
     elif entrada_tabuada == 0:
         print(f'   \033[1mHumano, acho que essa tabuada você sabe decor!\033[m')
