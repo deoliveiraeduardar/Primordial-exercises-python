@@ -5,15 +5,16 @@ numero = 0
 
 while True:
     print('====='*15)
-    entrada_tabuada = int(input('Digite o número que você quer ver a tabuada: '))
+    print('*Caso queira parar, é só digitar um número negativo.')
+    entrada_tabuada = int(input('\033[1mDigite o número que você quer ver a tabuada: \033[m'))
     if entrada_tabuada < 0:
         print('Finalizando o algoritmo...')
         time.sleep(1)
         print('Até logo!')
         break
     elif entrada_tabuada == 0:
-        print(f'   Humano, acho que essa tabuada você sabe decor!')
-        print(f'   Mas, tudo bem, se é isso que você quer... aí vai')
+        print(f'   \033[1mHumano, acho que essa tabuada você sabe decor!\033[m')
+        print(f'   \033[1mMas, tudo bem, se é isso que você quer... aí vai\033[m')
         time.sleep(3)
         print('')
     for d in range(1, 10+1):
