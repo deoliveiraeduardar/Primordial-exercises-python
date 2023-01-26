@@ -4,20 +4,24 @@ import emoji
 
 print('===='*8, 'VAMOS JOGAR PAR OU ÍMPAR!', '===='*8)
 print('*Mas só vamos parar de jogar quando você perder, humano!')
-lista = []
-par_ou_impar = ''
-soma = 0
-contador = 0
 
 while True:
+    lista = []
+    soma = 0
+    contador = 0
+
+    par_ou_impar = ' '
+    humano_numero = 0
+
     # GERANDO LISTA
     print('------' * 13)
     for d in range(1, 10 + 1):
         lista.append(d)
     maquina_numero = random.choice(lista)
-
-    par_ou_impar = str(input('\033[1mLevando em conta P para par e I para ímpar. Digite a sua escolha: \033[m')).upper()
     humano_numero = int(input('\033[1mUm, dois, três e já! Digite um número de 0 a 10: \033[m'))
+
+    while par_ou_impar not in 'PI':
+        par_ou_impar = str(input('\033[1mLevando em conta P para par e I para ímpar. Digite a sua escolha: \033[m')).upper()
 
     soma = maquina_numero + humano_numero
     print('')
