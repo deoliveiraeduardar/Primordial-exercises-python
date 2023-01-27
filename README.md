@@ -1,4 +1,4 @@
-# Exercicios primordiais
- Somente uma base sólida sustenta um grande monumento. 
- 
- - Exercícios de conceitos e recursos básicos para formar um alicerce sólido para profissionais altamente capacitados.
+# Primordial exercises
+Only a solid foundation supports a great monument.
+   
+   - Exercises of basic concepts and resources to form a solid license for highly qualified professionals.
