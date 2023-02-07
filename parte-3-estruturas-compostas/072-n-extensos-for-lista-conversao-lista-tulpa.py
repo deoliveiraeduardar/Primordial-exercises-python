@@ -1,7 +1,6 @@
 from num2words import num2words
 
-# Escrevendo por extenso
-# Gerando lista
+# CRIAÇÃO DE LISTA POR EXTENSO A PARTIR DO FOR
 lista = []
 
 for d in range(0, 20+1):
@@ -9,7 +8,22 @@ for d in range(0, 20+1):
     lista.append(n_extenso)
 print('')
 
-# Converter lista em tulpa
-print(f'Lista:', lista)
-tudo_na_tulpa = tuple(lista)
-print(f'Tulpa: ', tudo_na_tulpa)
+# CONVERSÃO DA LISTA PARA TULPA
+# print(f'Lista:', lista)
+tulpa = tuple(lista)
+# print(f'Tulpa: ', tulpa)
+
+# WHILE
+while True:
+    n_usuario = int(input('Digite um número de 0 a 20: '))
+# FAZENDO O USUÁRIO DIGITAR UM NÚMERO VÁLIDO
+    if n_usuario < 0 or n_usuario > 20:
+        print('Você não digitou um número válido.')
+        print('')
+        n_usuario = int(input('Tente de novo. Digite um número de 0 a 20: '))
+
+    if 0 <= n_usuario <= 20 :
+        for d in tulpa:
+            print('O número por extenso é: ', tulpa[n_usuario])
+            break
+        break
