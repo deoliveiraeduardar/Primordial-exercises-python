@@ -25,3 +25,6 @@ for pos, comida in enumerate(lanche):
 print()
 print('  - Total de índices de lanche:', len(lanche))
 print('  - Comi na proporção correta')
+print('  - Mostrando em ordem alfabética com   print(sorted(lanche)): ')
+print(sorted(lanche))
+
