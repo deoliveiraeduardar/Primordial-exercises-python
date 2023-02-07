@@ -1,0 +1,1 @@
+times = ('Palmeiras', 'Internacional', 'Fluminense', 'Corinthians', 'Flamengo', 'Atlético', 'Paranaense', 'Atlético', 'Fortaleza', 'São Paulo', 'América FC', 'Botafogo', 'Santos', 'Goiás', 'Red Bull', 'Coritiba', 'Cuiabá', 'Ceará', 'Atlético', 'Avaí', 'Juventude')
