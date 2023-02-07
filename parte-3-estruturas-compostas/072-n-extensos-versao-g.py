@@ -16,7 +16,8 @@ tulpa = tuple(lista)
 # WHILE
 while True:
     n_usuario = int(input('Digite um número de 0 a 20: '))
-    if 0 <= n_usuario <= 20 :
+    if 0 <= n_usuario <= 20:
         break
+    # End serve pra deixar na mema linha
     print('Tente novamente. ', end='')
 print('O número por extenso é: ', tulpa[n_usuario])

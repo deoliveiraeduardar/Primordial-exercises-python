@@ -22,6 +22,6 @@ while True:
         print('')
         n_usuario = int(input('Tente de novo. Digite um número de 0 a 20: '))
 
-    if 0 <= n_usuario <= 20 :
+    if 0 <= n_usuario <= 20:
         print('O número por extenso é: ', tulpa[n_usuario])
         break
