@@ -1,4 +1,3 @@
-
 tupla = (int(input('Digite um número: ')),
      int(input('Digite mais número: ')),
      int(input('Digite outro número: ')),
@@ -21,7 +20,3 @@ print('Os números pares digitados foram: ', end='')
 for numero in tupla:
     if numero % 2 == 0:
         print(numero, end=' ')
-
-
-
-
