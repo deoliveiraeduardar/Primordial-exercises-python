@@ -16,21 +16,3 @@ for posicao in range(0, len(listagem)):
         print(f'R${listagem[posicao]:>10.2f}')
 print('===' * 10)
 
-
-# quantidade = int(input('Digite quantos produtos você quer inserir: '))
-# lista = []
-
-# for w in range(0, quantidade):
-    # nome = str(input('Digite o nome do produto: ')).title()
-    # preco = float(input('Digite o preço do produto: '))
-    # lista.append(nome), lista.append(preco)
-    # print(lista)
-
-# Converter lista em tulpa
-# tulpa = tuple(lista)
-
-# contador = 0
-
-# for w in range(1, quantidade + 1):
-    # print(f'{tulpa[0 + contador]}')
-    # contador += 1
