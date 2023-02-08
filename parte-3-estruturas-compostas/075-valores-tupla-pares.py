@@ -4,18 +4,9 @@ n2 = float(input('Digite mais um número: '))
 n3 = float(input('Digite outro número: '))
 n4 = float(input('Digite o último número: '))
 
+tupla = (n1, n2, n3, n4)
+print(tupla)
 
+print(f'Vezes que apareceram o nº 9: {tupla.count(9)}')
+print(f'Em qual posição foi digitado o primeiro 3: {tupla.index(3)}')
 
-
-lista = []
-
-while True:
-    for d in range(0, quantidade + 1):
-        n = float(input('Digite o número: '))
-        lista.append(n)
-    break
-
-# Converter lista em tulpa
-print(f'Lista:', (lista))
-tupla = tuple(lista)
-print(f'Tulpa: ', tupla)
