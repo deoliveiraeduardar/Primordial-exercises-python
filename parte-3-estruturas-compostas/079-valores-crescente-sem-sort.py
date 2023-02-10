@@ -1,18 +1,19 @@
 
-lista =[]
+lista = []
 maior = 0
-menor =
-maior_da_lista = 0
+menor = 0
 
-for d in range(1, 6):
-    numero = int(input(f'Digite o {d}º número: '))
-    lista.append(numero)
-    print(lista)
+while True:
+    valor = int(input('\033[1mDigite um valor: \033[m'))
+    print('   Caso queira continuar digitando, digite S para sim e N para não.')
+    escolha = str(input('\033[1mDigite a sua opção: \033[m')).upper()
+    while escolha not in 'SN':
+        print('   Dados inválidos.')
+        print('')
 
-    if numero > maior:
-        maior = numero
+        escolha = str(input('\033[1mDigite novamente: \033[m')).upper()
+    if escolha in 'N':
+        print('Entrou no break')
+        break
 
-    # lista.append(numero)
-    # print(f'MÁXIMO DA LISTA:{max(lista)}')
-    # if numero == max(lista):
-
+print('PASSOU DO WHILE TRUE. FIM')
