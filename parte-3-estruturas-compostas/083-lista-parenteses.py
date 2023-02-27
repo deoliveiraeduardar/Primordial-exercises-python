@@ -15,3 +15,9 @@ for simbolo in expr:
         else:
             pilha.append(')')
             break
+
+if len(pilha) == 0:
+    print('Sua epressão está válida!')
+else:
+    print('Sua expressão está errada!')
+    
