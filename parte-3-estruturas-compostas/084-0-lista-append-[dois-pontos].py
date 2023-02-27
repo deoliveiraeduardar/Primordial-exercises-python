@@ -19,6 +19,5 @@ lista_galera.append(lista_teste[:])
 print('')
 
 # A resposta fica diferente, pois usei [:].
-# Dessa forma, a lista_teste original fica com Gustavo.
-# E a lista_galera fica com Eduarda.
+print(f'Print da lista_teste:{lista_teste}')
 print(f'Print da lista_galera: {lista_galera}')
