@@ -17,14 +17,11 @@ while True:
 
     if valor % 2 == 0:
         lista_pares.append(valor)
-        print(f'Lista pares: {lista_pares}')
 
     if valor % 3 == 0:
         lista_impares.append(valor)
-        print(f'Lista pares: {lista_impares}')
 
     if escolha in 'N':
-        print('Entrou no break')
         quantidade = len(lista)
         break
 
