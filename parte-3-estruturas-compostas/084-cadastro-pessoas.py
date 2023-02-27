@@ -4,15 +4,25 @@ principal = list()
 
 quantas_pessoas = 0
 
-lista_pesadas = []
-lista_leves = []
+maior = menor = 0
 
 while True:
     dado_temp.append(str(input('Nome: ')))
     dado_temp.append(float(input('Peso: ')))
     quantas_pessoas += 1
 
+    if len(principal) == 0:
+        maior = menor = dado_temp[1]
+
+    else:
+        if dado_temp[1] > maior:
+            maior = dado_temp[1]
+        if dado_temp[1] < menor:
+            menor = dado_temp[1]
+
+    # Para criar ligação só digito temp. Para gerar cópia digito [:]
     principal.append(dado_temp[:])
+
     print(f'Printando dado: {dado_temp}')
     dado_temp.clear()
     print('')
@@ -30,12 +40,27 @@ while True:
         break
 
 print('')
-print('Saindo...')
+print('Já fora do break...')
 
-print(f'PRINTANDO LISTA FINAL DE DADO: {dado_temp}')
-print(f'PRINTANDO LISTA FINAL DE GALERA: {principal}')
+print('==='*25)
+print(f'PRINTANDO DADO_TEMPORÁRIO: {dado_temp}')
+print(f'PRINTANDO LISTA FINAL DE PRINCIPAL: {principal}')
 print(f'')
 
-print(f'Quantidade de pessoas cadastradas: {quantas_pessoas}')
+print(f'Maior peso: {maior}kg. Peso de ', end='')
+for peso in principal:
+    if peso[1] == maior:
+        print(f'[{peso[0]}] ', end='')
+print()
+
+print(f'Menor peso: {menor}kg. Peso de ', end='')
+for peso in principal:
+    if peso[1] == menor:
+        print(f'[{peso[0]}] ', end='')
+
+
+print('')
+print(f'Quantidade de pessoas cadastradas com contador: {quantas_pessoas}')
+print(f'Quantidade de pessoas cadastradas com len: {len(principal)}')
 
 # Se eu colocar sem o [:] quando printo galera, ele triplica a lista
