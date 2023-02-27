@@ -1,22 +1,26 @@
 print('Vamos verificar se a sua expressão matemática está com a quantidade e ordem certa de parênteses.')
 print('=====' * 18)
 print('')
+# Solução baseada para
 
 expr = str(input('Digite a expressão matemática com parênteses: '))
-verificador = []
+lista_verificador = []
 
 for simbolo in expr:
     if simbolo == '(':
-        verificador.append('(')
+        lista_verificador.append('(')
+        # Quando tiver parêntese aberto, adicionar na lista_verificadorr.
 
     elif simbolo == ')':
-        if len(verificador) > 0:
-            verificador.pop()
+        if len(lista_verificador) > 0:
+            lista_verificador.pop()
         else:
-            verificador.append(')')
+            lista_verificador.append(')')
             break
+        # Quando tiver parêntese fechado, remover da lista_verificadorr.
 
-if len(verificador) == 0:
+
+if len(lista_verificador) == 0:
     print('Sua epressão é válida!')
 else:
     print('Sua expressão é inválida!')
