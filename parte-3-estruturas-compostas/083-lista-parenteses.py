@@ -11,7 +11,10 @@ for simbolo in expr:
 
     elif simbolo == ')':
         if len(pilha) > 0:
-            
+            pilha.pop()
+        else:
+            pilha.app(')')
+            break
 
 
 list(expr)
