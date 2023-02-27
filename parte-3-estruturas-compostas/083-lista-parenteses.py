@@ -1,7 +1,7 @@
 print('Vamos verificar se a sua expressão matemática está com a quantidade e ordem certa de parênteses.')
 print('=====' * 18)
 print('')
-# Solução baseada para
+# Solução: 
 
 expr = str(input('Digite a expressão matemática com parênteses: '))
 lista_verificador = []
