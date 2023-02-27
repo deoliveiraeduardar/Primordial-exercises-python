@@ -2,16 +2,26 @@ print('Vamos verificar se a sua expressão matemática está com a quantidade e 
 print('=====' * 18)
 print('')
 
-frase = str(input('Digite a expressão matemática com parênteses: '))
-list(frase)
-print(f'Essa é a frase: {frase}')
-print(f'Quantidade de caracteres: {len(frase)}')
+expr = str(input('Digite a expressão matemática com parênteses: '))
+pilha = []
+
+for simbolo in expr:
+    if simbolo == '(':
+        pilha.append('(')
+
+    elif simbolo == ')':
+        if len(pilha) > 0:
+            
+
+
+list(expr)
+print(f'Essa é a frase: {expr}')
+print(f'Quantidade de caracteres: {len(expr)}')
 print('')
 
 print(frase)
 
-print(f'O primeiro parêntese aberto ocorre na posição: {frase.index('(')}'))
-print('O primeiro parênteses aberto ocorre em: {}'.format(frase.index('(')))
+
 frase.index('(')
 
 # USAR LEN
