@@ -3,20 +3,20 @@ print('=====' * 18)
 print('')
 
 expr = str(input('Digite a expressão matemática com parênteses: '))
-pilha = []
+verificador = []
 
 for simbolo in expr:
     if simbolo == '(':
-        pilha.append('(')
+        verificador.append('(')
 
     elif simbolo == ')':
-        if len(pilha) > 0:
-            pilha.pop()
+        if len(verificador) > 0:
+            verificador.pop()
         else:
-            pilha.append(')')
+            verificador.append(')')
             break
 
-if len(pilha) == 0:
+if len(verificador) == 0:
     print('Sua epressão é válida!')
 else:
     print('Sua expressão é inválida!')
