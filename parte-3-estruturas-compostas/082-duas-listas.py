@@ -14,7 +14,7 @@ while True:
         print('   Dados inválidos.')
         print('')
         escolha = str(input('\033[1mDigite novamente: \033[m')).upper()
-        
+
     if valor % 2 == 0:
         lista_pares.append(valor)
         print(f'Lista pares: {lista_pares}')
