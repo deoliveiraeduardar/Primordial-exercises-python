@@ -22,8 +22,7 @@ for simbolo in expr:
 
 if len(lista_verificadora) == 0:
     print('Sua epressão é válida!')
-    # Cada partêntese aberto, foi fechado
+    # Cada parêntese aberto foi fechado
 else:
     print('Sua expressão é inválida!')
-    # Ao menos um partêntese aberto, não foi fechado
-
+    # Ao menos um parêntese aberto não foi fechado
