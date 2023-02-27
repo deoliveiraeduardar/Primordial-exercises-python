@@ -17,7 +17,6 @@ for simbolo in expr:
             break
 
 if len(pilha) == 0:
-    print('Sua epressão está válida!')
+    print('Sua epressão é válida!')
 else:
-    print('Sua expressão está errada!')
-    
+    print('Sua expressão é inválida!')
