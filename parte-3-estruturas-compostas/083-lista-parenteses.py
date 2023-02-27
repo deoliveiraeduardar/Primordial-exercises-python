@@ -7,7 +7,7 @@ lista_verificadora = []
 
 for simbolo in expr:
     if simbolo == '(':
-        # Quando tiver parêntese aberto, adiciona ( na lista_verificadorr.
+        # Quando tiver parêntese aberto, adiciona um ( na lista_verificadorr.
         lista_verificadora.append('(')
 
     elif simbolo == ')':
@@ -15,12 +15,15 @@ for simbolo in expr:
             # Caso a lista não esteja vazia, remove o último elemento da lista_verificadora
             lista_verificadora.pop()
         else:
-            # Caso a lista estiver vazia, o parêntese fechado é adicionado na lista_verificadora.
+            # Caso a lista estiver vazia, um ) é adicionado na lista_verificadora.
             lista_verificadora.append(')')
             break
 
 
 if len(lista_verificadora) == 0:
     print('Sua epressão é válida!')
+    # Cada partêntese aberto, foi fechado
 else:
     print('Sua expressão é inválida!')
+    # Ao menos um partêntese aberto, não foi fechado
+
