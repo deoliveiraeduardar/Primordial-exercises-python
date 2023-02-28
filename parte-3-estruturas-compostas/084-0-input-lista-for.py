@@ -1,5 +1,6 @@
 galera = []
 dado = []
+# Dado é  temprário
 totalmaior = totalmenor = 0
 
 for d in range(0, 3):
