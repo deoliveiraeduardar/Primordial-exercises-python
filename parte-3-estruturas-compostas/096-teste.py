@@ -1,10 +1,11 @@
-a = [2, 3, 4, 7]
-b = a
-print(f'Lista A: {a}')
-print(f'Lista B: {b}')
-print('')
+num = [[], []]
+valor = 0
 
-b[2] = 8
-print(f'Colocando B na posição 2 (b[2] = 8) fica: ')
-print(f'Lista A: {a}')
-print(f'Lista B: {b}')
+for d in range(1, 8):
+    valor = int(input(f'Digite o {d}º valor: '))
+    if valor % 2 == 0:
+        num[0].append(valor)
+        print(f'Printando lista num APÓS INSERIR PAR: {num}')
+    else:
+        num[1].append(valor)
+        print(f'Printando lista num APÓS INSERIR ÍMPAR: {num}')
