@@ -13,7 +13,6 @@ for d in range(0, 3):
     lista[1].append(num)
     print(f'Printando lista: {lista}')
 
-
 # LINHA 2
 for d in range(0, 3):
     num = int(input(f'Digite o número da posição [2, {d}]: '))
