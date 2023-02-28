@@ -15,12 +15,14 @@ for linha in range(0, 3):
 
         if coluna == 2:
             scol += matriz[linha][2]
-
-        if linha == 1:
-            
-
     print()
 
 print('====' * 20)
+print('')
 print(f'Soma de todos os pares: {spar}')
-print(f'Soma dos valores da terceira coluna: {scol}')
+print(f'Soma dos valores da 3ª coluna: {scol}')
+
+# Tá pegando a linha correta
+print(f'Valores da 2ª linha: {matriz[1]}')
+matriz[1].sort()
+print(f'Valor máximo da 2ª linha com sort: {matriz[1][2]}')
