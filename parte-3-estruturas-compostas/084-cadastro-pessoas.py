@@ -1,9 +1,7 @@
 dado_temp = []
 # dado é lista temporária
 principal = list()
-
 quantas_pessoas = 0
-
 maior = menor = 0
 
 while True:
