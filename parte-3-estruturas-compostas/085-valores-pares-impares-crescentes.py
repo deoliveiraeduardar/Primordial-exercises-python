@@ -2,8 +2,6 @@ temporario = []
 
 lista_unica = []
 
-pares = []
-impares = []
 
 while True:
     temporario.append(int(input('Digite o valor: ')))
