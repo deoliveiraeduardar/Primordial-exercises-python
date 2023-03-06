@@ -25,8 +25,7 @@ print('')
 
 print('----' * 3, f'Sorteando {quant} jogos', '---' * 3)
 for i, l in enumerate(jogos):
-    
-print(f'Os números sorteados foram {jogos}')
+    print(f'Jogo {i+1}: {l}')
 
 
 # Quantos jogos vai gerar
