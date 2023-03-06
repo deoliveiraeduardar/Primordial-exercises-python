@@ -33,8 +33,3 @@ for i, l in enumerate(jogos):
 
 print('')
 print('Boa sorte!')
-
-# Quantos jogos vai gerar
-# Cada jogo tem 6 numeros diferentes em cada jogo
-# Numeros: 1 a 60
-# Tudo cadastrado em lista composta
