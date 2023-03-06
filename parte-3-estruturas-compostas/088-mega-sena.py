@@ -6,7 +6,7 @@ print('-'*35)
 lista = list()
 jogos = list()
 quant = int(input('Digite jogos você quer que eu sorteie: '))
-tot = 0
+tot = 1
 
 while tot <= quant:
     cont = 0
