@@ -1,4 +1,6 @@
 from random import randint
+from time import sleep
+
 print('=='*25)
 print('              JOGA NA MEGA SENA              ')
 print('=='*25)
@@ -24,9 +26,10 @@ while tot <= quant:
 print('')
 
 print('----' * 3, f'Sorteando {quant} jogos', '---' * 3)
+sleep(0.5)
 for i, l in enumerate(jogos):
     print(f'Jogo {i+1}: {l}')
-
+    sleep(1)
 
 # Quantos jogos vai gerar
 # Cada jogo tem 6 numeros diferentes em cada jogo
