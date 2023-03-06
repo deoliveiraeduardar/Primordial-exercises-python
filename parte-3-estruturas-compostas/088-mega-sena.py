@@ -9,6 +9,7 @@ while True:
     if cont >= 6:
         print('Entrou no break')
         break
+lista.sort()
 print(f'Os números sorteados foram {lista}')
 
 # Quantos jogos vai gerar
