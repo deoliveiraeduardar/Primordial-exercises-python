@@ -21,7 +21,7 @@ while tot <= quant:
     jogos.append(lista[:])
     lista.clear()
     tot += 1
-    print(f'Os números sorteados foram {jogos}')
+print(f'Os números sorteados foram {jogos}')
 
 
 # Quantos jogos vai gerar
