@@ -4,7 +4,7 @@ print('        JOGA NA MEGA SENA        ')
 print('-'*35)
 
 lista = list()
-jogos = []
+jogos = list()
 quant = int(input('Digite jogos você quer que eu sorteie: '))
 tot = 0
 
@@ -20,7 +20,8 @@ while tot <= quant:
     lista.sort()
     jogos.append(lista[:])
     lista.clear()
-    print(f'Os números sorteados foram {lista}')
+    tot += 1
+    print(f'Os números sorteados foram {jogos}')
 
 
 # Quantos jogos vai gerar
