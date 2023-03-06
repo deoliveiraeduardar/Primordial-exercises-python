@@ -1,10 +1,12 @@
 from random import randint
 lista = list()
-cont = 0
-print('-'*30)
+print('-'*35)
 print('        JOGA NA MEGA SENA        ')
-print('-'*30)
-
+print('-'*35)
+quant = int(input('Digite jogos você quer que eu sorteie: '))
+tot = 0
+while tot <= quantidade:
+    cont = 0
 while True:
     num = randint(1, 60)
     if num not in lista:
