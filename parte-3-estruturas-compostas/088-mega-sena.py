@@ -1,7 +1,7 @@
 from random import randint
-print('-'*35)
-print('        JOGA NA MEGA SENA        ')
-print('-'*35)
+print('=='*25)
+print('              JOGA NA MEGA SENA              ')
+print('=='*25)
 
 lista = list()
 jogos = list()
@@ -21,6 +21,11 @@ while tot <= quant:
     jogos.append(lista[:])
     lista.clear()
     tot += 1
+print('')
+
+print('----' * 3, f'Sorteando {quant} jogos', '---' * 3)
+for i, l in enumerate(jogos):
+    
 print(f'Os números sorteados foram {jogos}')
 
 
